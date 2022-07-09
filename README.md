@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.kumaraswamy;
+})();
 })();
 </script>
 ```
@@ -142,9 +144,11 @@ var y = dist.logpdf( 0.8 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 console.log( objectKeys( kumaraswamy ) );
 
+})();
 })();
 </script>
 </body>
@@ -236,31 +240,31 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/stats/base/dists/kumaraswamy/ctor]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-ctor/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/ctor]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-ctor/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/kurtosis]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-kurtosis/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/kurtosis]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-kurtosis/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/mean]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mean/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/mean]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mean/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/median]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-median/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/median]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-median/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/mode]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mode/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/mode]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mode/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/skewness]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-skewness/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/skewness]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-skewness/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/stdev]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-stdev/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/stdev]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-stdev/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/variance]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-variance/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/variance]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-variance/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/cdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-cdf/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/cdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-cdf/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/logcdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logcdf/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/logcdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logcdf/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/logpdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logpdf/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/logpdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logpdf/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/pdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-pdf/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/pdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-pdf/tree/umd/tree/umd
 
-[@stdlib/stats/base/dists/kumaraswamy/quantile]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-quantile/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/quantile]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-quantile/tree/umd/tree/umd
 
 <!-- </toc-links> -->
 
