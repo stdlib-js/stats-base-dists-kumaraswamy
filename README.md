@@ -24,38 +24,30 @@ limitations under the License.
 
 > Kumaraswamy's double bounded distribution.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-kumaraswamy
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-kumaraswamy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var kumaraswamy = require( 'path/to/vendor/umd/stats-base-dists-kumaraswamy/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.kumaraswamy;
-})();
-</script>
+var kumaraswamy = require( '@stdlib/stats-base-dists-kumaraswamy' );
 ```
 
 #### kumaraswamy
@@ -134,21 +126,11 @@ var y = dist.logpdf( 0.8 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils-keys' );
+var kumaraswamy = require( '@stdlib/stats-base-dists-kumaraswamy' );
 
 console.log( objectKeys( kumaraswamy ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -216,7 +198,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -236,31 +218,31 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/stats/base/dists/kumaraswamy/ctor]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-ctor/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/ctor]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-ctor
 
-[@stdlib/stats/base/dists/kumaraswamy/kurtosis]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-kurtosis/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/kurtosis]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-kurtosis
 
-[@stdlib/stats/base/dists/kumaraswamy/mean]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mean/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/mean]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mean
 
-[@stdlib/stats/base/dists/kumaraswamy/median]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-median/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/median]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-median
 
-[@stdlib/stats/base/dists/kumaraswamy/mode]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mode/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/mode]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mode
 
-[@stdlib/stats/base/dists/kumaraswamy/skewness]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-skewness/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/skewness]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-skewness
 
-[@stdlib/stats/base/dists/kumaraswamy/stdev]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-stdev/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/stdev]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-stdev
 
-[@stdlib/stats/base/dists/kumaraswamy/variance]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-variance/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/variance]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-variance
 
-[@stdlib/stats/base/dists/kumaraswamy/cdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-cdf/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/cdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-cdf
 
-[@stdlib/stats/base/dists/kumaraswamy/logcdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logcdf/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/logcdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logcdf
 
-[@stdlib/stats/base/dists/kumaraswamy/logpdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logpdf/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/logpdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logpdf
 
-[@stdlib/stats/base/dists/kumaraswamy/pdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-pdf/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/pdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-pdf
 
-[@stdlib/stats/base/dists/kumaraswamy/quantile]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-quantile/tree/umd
+[@stdlib/stats/base/dists/kumaraswamy/quantile]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-quantile
 
 <!-- </toc-links> -->
 
