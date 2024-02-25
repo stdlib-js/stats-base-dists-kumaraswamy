@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import kumaraswamy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@esm/index.mjs';
+import kumaraswamy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Kumaraswamy, cdf, kurtosis, logcdf, logpdf, mean, median, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@esm/index.mjs';
+import { Kumaraswamy, cdf, kurtosis, logcdf, logpdf, mean, median, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@v0.2.1-esm/index.mjs';
 ```
 
 #### kumaraswamy
@@ -134,7 +134,7 @@ var y = dist.logpdf( 0.8 );
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs';
-import kumaraswamy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@esm/index.mjs';
+import kumaraswamy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@v0.2.1-esm/index.mjs';
 
 console.log( objectKeys( kumaraswamy ) );
 
