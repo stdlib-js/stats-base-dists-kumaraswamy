@@ -4,9 +4,78 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-11-01)
+## Unreleased (2024-11-11)
 
-No changes reported for this release.
+<section class="packages">
+
+### Packages
+
+<section class="package" id="stats-base-dists-kumaraswamy-unreleased">
+
+#### [@stdlib/stats/base/dists/kumaraswamy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/kumaraswamy)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#1632](https://github.com/stdlib-js/stdlib/issues/1632)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+</section>
+
+<!-- /.packages -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#1632](https://github.com/stdlib-js/stdlib/issues/1632)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Philipp Burckhardt
+-   Ruthwik Chikoti
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`4e1c68b`](https://github.com/stdlib-js/stdlib/commit/4e1c68b10906fea989b1a785405eb17d68553461) - **docs:** improve examples of `stats/base/dists/kumaraswamy` [(#2605)](https://github.com/stdlib-js/stdlib/pull/2605) _(by Ruthwik Chikoti, Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
 
 </section>
 
