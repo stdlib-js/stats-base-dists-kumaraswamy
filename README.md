@@ -35,20 +35,32 @@ limitations under the License.
 
 > Kumaraswamy's double bounded distribution.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-kumaraswamy
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import kumaraswamy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { Kumaraswamy, cdf, kurtosis, logcdf, logpdf, mean, median, mode, pdf, quantile, skewness, stdev, variance } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@esm/index.mjs';
+var kumaraswamy = require( '@stdlib/stats-base-dists-kumaraswamy' );
 ```
 
 #### kumaraswamy
@@ -107,7 +119,7 @@ The namespace contains a constructor function for creating a [Kumaraswamy's doub
 <!-- </toc> -->
 
 ```javascript
-var Kumaraswamy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy' ).Kumaraswamy;
+var Kumaraswamy = require( '@stdlib/stats-base-dists-kumaraswamy' ).Kumaraswamy;
 
 var dist = new Kumaraswamy( 2.0, 4.0 );
 
@@ -123,24 +135,75 @@ var y = dist.logpdf( 0.8 );
 
 ## Examples
 
-<!-- TODO: better examples -->
-
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
+```javascript
+var kumaraswamy = require( '@stdlib/stats-base-dists-kumaraswamy' );
 
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs';
-import kumaraswamy from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-kumaraswamy@esm/index.mjs';
+// Create a Kumaraswamy distribution object:
+var a = 2.0;
+var b = 5.0;
+var dist = new kumaraswamy.Kumaraswamy( a, b );
 
-console.log( objectKeys( kumaraswamy ) );
+// Calculate basic distribution properties:
+console.log( 'Mean: %d', dist.mean );
+console.log( 'Median: %d', dist.median );
+console.log( 'Mode: %d', dist.mode );
+console.log( 'Variance: %d', dist.variance );
 
-</script>
-</body>
-</html>
+// Evaluate the probability density function (PDF):
+var x = 0.5;
+var y = dist.pdf( x );
+console.log( 'PDF at x = %d: %d', x, y );
+
+// Evaluate the cumulative distribution function (CDF):
+y = dist.cdf( x );
+console.log( 'CDF at x = %d: %d', x, y );
+
+// Evaluate the natural logarithm of PDF and CDF:
+console.log( 'Log PDF at x = %d: %d', x, dist.logpdf( x ) );
+console.log( 'Log CDF at x = %d: %d', x, dist.logcdf( x ) );
+
+// Calculate the quantile for a given probability:
+var p = 0.75;
+x = dist.quantile( p );
+console.log( 'Quantile at p = %d: %d', p, x );
+
+// Use standalone distribution functions:
+x = 0.3;
+y = kumaraswamy.pdf( x, a, b );
+console.log( 'Standalone PDF at x = %d: %d', x, y );
+
+y = kumaraswamy.cdf( x, a, b );
+console.log( 'Standalone CDF at x = %d: %d', x, y );
+
+y = kumaraswamy.quantile( 0.9, a, b );
+console.log( 'Standalone Quantile at p = 0.9: %d', y );
+
+// Calculate additional distribution properties:
+console.log( 'Kurtosis: %d', kumaraswamy.kurtosis( a, b ) );
+console.log( 'Skewness: %d', kumaraswamy.skewness( a, b ) );
+console.log( 'Standard Deviation: %d', kumaraswamy.stdev( a, b ) );
+
+// Demonstrate the effect of different shape parameters:
+console.log( '\nEffect of shape parameters:' );
+var shapes = [
+    [ 0.5, 0.5 ],
+    [ 5.0, 1.0 ],
+    [ 1.0, 5.0 ],
+    [ 2.0, 2.0 ],
+    [ 10.0, 10.0 ]
+];
+var params;
+var i;
+for ( i = 0; i < shapes.length; i++ ) {
+    params = shapes[i];
+    console.log( '\na = %d, b = %d', params[0], params[1] );
+    console.log( 'Mean: %d', kumaraswamy.mean( params[0], params[1] ) );
+    console.log( 'Median: %d', kumaraswamy.median( params[0], params[1] ) );
+    console.log( 'Mode: %d', kumaraswamy.mode( params[0], params[1] ) );
+    console.log( 'Skewness: %d', kumaraswamy.skewness( params[0], params[1] ) );
+}
 ```
 
 </section>
@@ -164,7 +227,7 @@ console.log( objectKeys( kumaraswamy ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -231,31 +294,31 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/stats/base/dists/kumaraswamy/ctor]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-ctor/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/ctor]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-ctor
 
-[@stdlib/stats/base/dists/kumaraswamy/kurtosis]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-kurtosis/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/kurtosis]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-kurtosis
 
-[@stdlib/stats/base/dists/kumaraswamy/mean]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mean/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/mean]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mean
 
-[@stdlib/stats/base/dists/kumaraswamy/median]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-median/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/median]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-median
 
-[@stdlib/stats/base/dists/kumaraswamy/mode]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mode/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/mode]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-mode
 
-[@stdlib/stats/base/dists/kumaraswamy/skewness]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-skewness/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/skewness]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-skewness
 
-[@stdlib/stats/base/dists/kumaraswamy/stdev]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-stdev/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/stdev]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-stdev
 
-[@stdlib/stats/base/dists/kumaraswamy/variance]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-variance/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/variance]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-variance
 
-[@stdlib/stats/base/dists/kumaraswamy/cdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-cdf/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/cdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-cdf
 
-[@stdlib/stats/base/dists/kumaraswamy/logcdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logcdf/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/logcdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logcdf
 
-[@stdlib/stats/base/dists/kumaraswamy/logpdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logpdf/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/logpdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-logpdf
 
-[@stdlib/stats/base/dists/kumaraswamy/pdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-pdf/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/pdf]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-pdf
 
-[@stdlib/stats/base/dists/kumaraswamy/quantile]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-quantile/tree/esm
+[@stdlib/stats/base/dists/kumaraswamy/quantile]: https://github.com/stdlib-js/stats-base-dists-kumaraswamy-quantile
 
 <!-- </toc-links> -->
 
