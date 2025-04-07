@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-24)
+## Unreleased (2025-04-07)
 
 <section class="packages">
 
@@ -23,6 +23,40 @@
 This release closes the following issue:
 
 [#1632](https://github.com/stdlib-js/stdlib/issues/1632)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="stats-base-dists-kumaraswamy-kurtosis-unreleased">
+
+#### [@stdlib/stats/base/dists/kumaraswamy/kurtosis](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/kumaraswamy/kurtosis)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`912e9e1`](https://github.com/stdlib-js/stdlib/commit/912e9e12ee52689d4680230cca7da8d1464a08e0) - add `stats/base/dists/kumaraswamy/kurtosis` [(#4525)](https://github.com/stdlib-js/stdlib/pull/4525)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3697](https://github.com/stdlib-js/stdlib/issues/3697)
 
 </section>
 
@@ -118,13 +152,23 @@ This release closes the following issue:
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`eaccd6c`](https://github.com/stdlib-js/stdlib/commit/eaccd6c6b695a1b7bb2807a4ad12a54f9577339f) - update C implementation for `stats/base/dists/kumaraswamy/median` [(#5452)](https://github.com/stdlib-js/stdlib/pull/5452)
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="issues">
 
 ##### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#3701](https://github.com/stdlib-js/stdlib/issues/3701)
+[#3701](https://github.com/stdlib-js/stdlib/issues/3701), [#5047](https://github.com/stdlib-js/stdlib/issues/5047)
 
 </section>
 
@@ -170,6 +214,40 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="stats-base-dists-kumaraswamy-variance-unreleased">
+
+#### [@stdlib/stats/base/dists/kumaraswamy/variance](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/kumaraswamy/variance)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9adef4a`](https://github.com/stdlib-js/stdlib/commit/9adef4a1dc4ebabbca789f69bf1c2516018ee453) - add C implementation for `stats/base/dists/kumaraswamy/variance` [(#4495)](https://github.com/stdlib-js/stdlib/pull/4495)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#3707](https://github.com/stdlib-js/stdlib/issues/3707)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -178,9 +256,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 5 issues were closed in this release:
+A total of 8 issues were closed in this release:
 
-[#1632](https://github.com/stdlib-js/stdlib/issues/1632), [#3698](https://github.com/stdlib-js/stdlib/issues/3698), [#3699](https://github.com/stdlib-js/stdlib/issues/3699), [#3701](https://github.com/stdlib-js/stdlib/issues/3701), [#3705](https://github.com/stdlib-js/stdlib/issues/3705)
+[#1632](https://github.com/stdlib-js/stdlib/issues/1632), [#3697](https://github.com/stdlib-js/stdlib/issues/3697), [#3698](https://github.com/stdlib-js/stdlib/issues/3698), [#3699](https://github.com/stdlib-js/stdlib/issues/3699), [#3701](https://github.com/stdlib-js/stdlib/issues/3701), [#3705](https://github.com/stdlib-js/stdlib/issues/3705), [#3707](https://github.com/stdlib-js/stdlib/issues/3707), [#5047](https://github.com/stdlib-js/stdlib/issues/5047)
 
 </section>
 
@@ -190,13 +268,16 @@ A total of 5 issues were closed in this release:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 8 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Desh Deepak Kant
 -   Dev Goel
+-   Gautam sharma
+-   Karan Anand
 -   Philipp Burckhardt
 -   Ruthwik Chikoti
+-   Shabareesh Shetty
 
 </section>
 
@@ -208,6 +289,14 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`9d9f653`](https://github.com/stdlib-js/stdlib/commit/9d9f653d3c57620043aa6b0d1e6103ea3b7a5e28) - **chore:** clean-up _(by Athan Reines)_
+-   [`5271c7a`](https://github.com/stdlib-js/stdlib/commit/5271c7a1ad270bb7c4031bcdf270b9caee547be6) - **style:** use tabs instead of spaces _(by Philipp Burckhardt)_
+-   [`7e02d8e`](https://github.com/stdlib-js/stdlib/commit/7e02d8e80050edcbeaf849942ef9664a36c0ead5) - **bench:** fix function name _(by Philipp Burckhardt)_
+-   [`9adef4a`](https://github.com/stdlib-js/stdlib/commit/9adef4a1dc4ebabbca789f69bf1c2516018ee453) - **feat:** add C implementation for `stats/base/dists/kumaraswamy/variance` [(#4495)](https://github.com/stdlib-js/stdlib/pull/4495) _(by Shabareesh Shetty, Philipp Burckhardt, stdlib-bot)_
+-   [`da17eab`](https://github.com/stdlib-js/stdlib/commit/da17eabd5db7f7aa32a2d39d00f8b53c9cc11495) - **chore:** clean-up _(by Athan Reines)_
+-   [`912e9e1`](https://github.com/stdlib-js/stdlib/commit/912e9e12ee52689d4680230cca7da8d1464a08e0) - **feat:** add `stats/base/dists/kumaraswamy/kurtosis` [(#4525)](https://github.com/stdlib-js/stdlib/pull/4525) _(by Shabareesh Shetty, Philipp Burckhardt, stdlib-bot)_
+-   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
+-   [`eaccd6c`](https://github.com/stdlib-js/stdlib/commit/eaccd6c6b695a1b7bb2807a4ad12a54f9577339f) - **fix:** update C implementation for `stats/base/dists/kumaraswamy/median` [(#5452)](https://github.com/stdlib-js/stdlib/pull/5452) _(by Gautam sharma, Karan Anand, stdlib-bot, Philipp Burckhardt)_
 -   [`911e179`](https://github.com/stdlib-js/stdlib/commit/911e1793885aced96a177f2ea54300503b2c2a26) - **docs:** clean-up of C docstrings _(by Philipp Burckhardt)_
 -   [`e61b1de`](https://github.com/stdlib-js/stdlib/commit/e61b1dee3334bacf30d213de5b5f1c7868c0753b) - **docs:** clean-up of C docstrings _(by Philipp Burckhardt)_
 -   [`441ea68`](https://github.com/stdlib-js/stdlib/commit/441ea68883183d31363403a11d4142cabf4c0ef0) - **chore:** minor clean-up _(by Philipp Burckhardt)_
