@@ -4,12 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-19)
+## Unreleased (2025-11-21)
 
 <section class="features">
 
 ### Features
 
+-   [`f344e9d`](https://github.com/stdlib-js/stdlib/commit/f344e9d6c049596d178389bd07f3be5eace72deb) - add `stats/base/dists/kumaraswamy/stdev` [(#4513)](https://github.com/stdlib-js/stdlib/pull/4513)
+-   [`0773f85`](https://github.com/stdlib-js/stdlib/commit/0773f850e9f521f3949d77156cd1f5c98a3bbda3) - add C implementation for `stats/base/dists/kumaraswamy/cdf` [(#4449)](https://github.com/stdlib-js/stdlib/pull/4449)
+-   [`b822409`](https://github.com/stdlib-js/stdlib/commit/b8224091e6e6caa3f263c7837b70fbb5e793a458) - add C implementation  for `stats/base/dists/kumaraswamy/quantile` [(#4549)](https://github.com/stdlib-js/stdlib/pull/4549)
 -   [`c7854d1`](https://github.com/stdlib-js/stdlib/commit/c7854d17a603d665052700c78399ae8c80541133) - add C implementation for `stats/base/dists/kumaraswamy/mode` [(#4062)](https://github.com/stdlib-js/stdlib/pull/4062)
 -   [`b98e338`](https://github.com/stdlib-js/stdlib/commit/b98e338f05a6d73a564797ca9e8d83a8618af3ee) - add C implementation for `stats/base/dists/kumaraswamy/mean` [(#4060)](https://github.com/stdlib-js/stdlib/pull/4060)
 -   [`9adef4a`](https://github.com/stdlib-js/stdlib/commit/9adef4a1dc4ebabbca789f69bf1c2516018ee453) - add C implementation for `stats/base/dists/kumaraswamy/variance` [(#4495)](https://github.com/stdlib-js/stdlib/pull/4495)
@@ -37,9 +40,9 @@
 
 ### Closed Issues
 
-A total of 10 issues were closed in this release:
+A total of 13 issues were closed in this release:
 
-[#1632](https://github.com/stdlib-js/stdlib/issues/1632), [#3697](https://github.com/stdlib-js/stdlib/issues/3697), [#3698](https://github.com/stdlib-js/stdlib/issues/3698), [#3699](https://github.com/stdlib-js/stdlib/issues/3699), [#3700](https://github.com/stdlib-js/stdlib/issues/3700), [#3701](https://github.com/stdlib-js/stdlib/issues/3701), [#3702](https://github.com/stdlib-js/stdlib/issues/3702), [#3705](https://github.com/stdlib-js/stdlib/issues/3705), [#3707](https://github.com/stdlib-js/stdlib/issues/3707), [#5047](https://github.com/stdlib-js/stdlib/issues/5047)
+[#1632](https://github.com/stdlib-js/stdlib/issues/1632), [#3696](https://github.com/stdlib-js/stdlib/issues/3696), [#3697](https://github.com/stdlib-js/stdlib/issues/3697), [#3698](https://github.com/stdlib-js/stdlib/issues/3698), [#3699](https://github.com/stdlib-js/stdlib/issues/3699), [#3700](https://github.com/stdlib-js/stdlib/issues/3700), [#3701](https://github.com/stdlib-js/stdlib/issues/3701), [#3702](https://github.com/stdlib-js/stdlib/issues/3702), [#3704](https://github.com/stdlib-js/stdlib/issues/3704), [#3705](https://github.com/stdlib-js/stdlib/issues/3705), [#3706](https://github.com/stdlib-js/stdlib/issues/3706), [#3707](https://github.com/stdlib-js/stdlib/issues/3707), [#5047](https://github.com/stdlib-js/stdlib/issues/5047)
 
 </section>
 
@@ -51,6 +54,21 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`9b13062`](https://github.com/stdlib-js/stdlib/commit/9b130625f0f19866a877023e9be85204636ef01e) - **docs:** fix return values in TSDoc return annotation comments _(by Philipp Burckhardt)_
+-   [`4a599d7`](https://github.com/stdlib-js/stdlib/commit/4a599d7672902faa05e6dfbe3822a27422337278) - **docs:** replace manual `for` loop in examples [(#8230)](https://github.com/stdlib-js/stdlib/pull/8230) _(by Harsh Yadav)_
+-   [`e2efe32`](https://github.com/stdlib-js/stdlib/commit/e2efe32914d0d9dae5da34e6f7e7bf7655430710) - **chore:** rename exported variable in d.ts file to match name used in example code _(by Philipp Burckhardt)_
+-   [`e678757`](https://github.com/stdlib-js/stdlib/commit/e678757c9a62631a907278ec13a5d7b27c0f1e15) - **docs:** fix return annotation values _(by Philipp Burckhardt)_
+-   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`9c21fd2`](https://github.com/stdlib-js/stdlib/commit/9c21fd20ef8b8a6a88abb96d80ea6d8e4c5434eb) - **test:** use .strictEqual() instead of .equal() _(by Philipp Burckhardt)_
+-   [`d00c8a8`](https://github.com/stdlib-js/stdlib/commit/d00c8a84536acee1f0d53f08806d004856129d7b) - **docs:** fix string interpolation _(by Athan Reines)_
+-   [`d56366e`](https://github.com/stdlib-js/stdlib/commit/d56366e05e4b941d984a9fbf18e726102eaaa705) - **docs:** update examples and fix docs _(by Athan Reines)_
+-   [`83af59d`](https://github.com/stdlib-js/stdlib/commit/83af59de17b7e0db3d95fb5959ec0f38cf63c88e) - **test:** increase needed tolerances for tests to pass _(by Philipp Burckhardt)_
+-   [`f344e9d`](https://github.com/stdlib-js/stdlib/commit/f344e9d6c049596d178389bd07f3be5eace72deb) - **feat:** add `stats/base/dists/kumaraswamy/stdev` [(#4513)](https://github.com/stdlib-js/stdlib/pull/4513) _(by Shabareesh Shetty, Philipp Burckhardt, stdlib-bot)_
+-   [`0773f85`](https://github.com/stdlib-js/stdlib/commit/0773f850e9f521f3949d77156cd1f5c98a3bbda3) - **feat:** add C implementation for `stats/base/dists/kumaraswamy/cdf` [(#4449)](https://github.com/stdlib-js/stdlib/pull/4449) _(by Dev Goel, Philipp Burckhardt, stdlib-bot)_
+-   [`b822409`](https://github.com/stdlib-js/stdlib/commit/b8224091e6e6caa3f263c7837b70fbb5e793a458) - **feat:** add C implementation  for `stats/base/dists/kumaraswamy/quantile` [(#4549)](https://github.com/stdlib-js/stdlib/pull/4549) _(by Dev Goel, Philipp Burckhardt, stdlib-bot)_
 -   [`c4ed64c`](https://github.com/stdlib-js/stdlib/commit/c4ed64c4024bd667104234ce5775d1e2ce7faecd) - **chore:** clean-up _(by Athan Reines)_
 -   [`c7854d1`](https://github.com/stdlib-js/stdlib/commit/c7854d17a603d665052700c78399ae8c80541133) - **feat:** add C implementation for `stats/base/dists/kumaraswamy/mode` [(#4062)](https://github.com/stdlib-js/stdlib/pull/4062) _(by Manvith M, Philipp Burckhardt, stdlib-bot)_
 -   [`8c463ff`](https://github.com/stdlib-js/stdlib/commit/8c463ff85300e86d6a782511d1defea793994da5) - **style:** fix indentation in C files _(by Philipp Burckhardt)_
@@ -88,12 +106,13 @@ A total of 10 issues were closed in this release:
 
 ### Contributors
 
-A total of 9 people contributed to this release. Thank you to the following contributors:
+A total of 10 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Desh Deepak Kant
 -   Dev Goel
 -   Gautam sharma
+-   Harsh Yadav
 -   Karan Anand
 -   Manvith M
 -   Philipp Burckhardt
