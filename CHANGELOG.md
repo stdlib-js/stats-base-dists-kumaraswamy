@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-10)
+## Unreleased (2026-07-27)
 
 <section class="commits">
 
@@ -12,6 +12,8 @@
 
 <details>
 
+-   [`ca49ceb`](https://github.com/stdlib-js/stdlib/commit/ca49ceb1e17979e0ecb77bc50dedd14b7515b46f) - **refactor:** rename internal variable [(#13167)](https://github.com/stdlib-js/stdlib/pull/13167) _(by Philipp Burckhardt)_
+-   [`cae5335`](https://github.com/stdlib-js/stdlib/commit/cae53357950b4c389b0020878c268995cd79d222) - **docs:** propagate develop fixes to sibling packages [(#12736)](https://github.com/stdlib-js/stdlib/pull/12736) _(by Philipp Burckhardt)_
 -   [`e5989f9`](https://github.com/stdlib-js/stdlib/commit/e5989f9fbbf926c8986246ff1aa6f1fcaa3058f9) - **docs:** update `stats/base/dists/kumaraswamy` TypeScript declarations [(#12604)](https://github.com/stdlib-js/stdlib/pull/12604) _(by stdlib-bot)_
 -   [`6e9254b`](https://github.com/stdlib-js/stdlib/commit/6e9254b32595b7c8e5f3eb3e06a697c67e1a4055) - **docs:** add missing empty `notes` section blocks [(#12564)](https://github.com/stdlib-js/stdlib/pull/12564) _(by Philipp Burckhardt)_
 -   [`f59b324`](https://github.com/stdlib-js/stdlib/commit/f59b324c3c652580e17c4c4baae8168faab8af8c) - **docs:** fix typos and copy-paste errors in `stats` TypeScript declarations [(#12482)](https://github.com/stdlib-js/stdlib/pull/12482) _(by Philipp Burckhardt, Athan Reines)_
