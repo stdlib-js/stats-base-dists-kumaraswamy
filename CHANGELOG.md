@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-27)
+## Unreleased (2026-09-16)
 
 <section class="commits">
 
@@ -12,6 +12,9 @@
 
 <details>
 
+-   [`274f42b`](https://github.com/stdlib-js/stdlib/commit/274f42bfe257c799288711fe61f94ecfcd67b379) - **test:** migrate `stats/base/dists/kumaraswamy/mode` to ULP-based assertions [(#14426)](https://github.com/stdlib-js/stdlib/pull/14426) _(by Athan Reines)_
+-   [`048e06b`](https://github.com/stdlib-js/stdlib/commit/048e06b6a6d7655a5bf4c20840e14f2449b34950) - **test:** migrate `stats/base/dists/kumaraswamy/mean` to ULP-based assertions [(#14163)](https://github.com/stdlib-js/stdlib/pull/14163) _(by Athan Reines)_
+-   [`075cabd`](https://github.com/stdlib-js/stdlib/commit/075cabdcc90e9f333a2329ae382fca574ee3f841) - **docs:** fix descriptions [(#13938)](https://github.com/stdlib-js/stdlib/pull/13938) _(by Philipp Burckhardt)_
 -   [`ca49ceb`](https://github.com/stdlib-js/stdlib/commit/ca49ceb1e17979e0ecb77bc50dedd14b7515b46f) - **refactor:** rename internal variable [(#13167)](https://github.com/stdlib-js/stdlib/pull/13167) _(by Philipp Burckhardt)_
 -   [`cae5335`](https://github.com/stdlib-js/stdlib/commit/cae53357950b4c389b0020878c268995cd79d222) - **docs:** propagate develop fixes to sibling packages [(#12736)](https://github.com/stdlib-js/stdlib/pull/12736) _(by Philipp Burckhardt)_
 -   [`e5989f9`](https://github.com/stdlib-js/stdlib/commit/e5989f9fbbf926c8986246ff1aa6f1fcaa3058f9) - **docs:** update `stats/base/dists/kumaraswamy` TypeScript declarations [(#12604)](https://github.com/stdlib-js/stdlib/pull/12604) _(by stdlib-bot)_
