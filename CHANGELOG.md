@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-16)
+## Unreleased (2026-11-02)
+
+<section class="features">
+
+### Features
+
+-   [`dcf6e6a`](https://github.com/stdlib-js/stdlib/commit/dcf6e6adf19e93db2d6e8931f9b511442f90286b) - add C implementation for stats/base/dists/kumaraswamy/pdf
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,14 @@
 
 <details>
 
+-   [`dcf6e6a`](https://github.com/stdlib-js/stdlib/commit/dcf6e6adf19e93db2d6e8931f9b511442f90286b) - **feat:** add C implementation for stats/base/dists/kumaraswamy/pdf _(by Philipp Burckhardt)_
+-   [`dff5bb8`](https://github.com/stdlib-js/stdlib/commit/dff5bb81ff7f0aed92b89cba178e6f8a85611e52) - **docs:** update Markdown equation elements _(by stdlib-bot)_
+-   [`bbd0c01`](https://github.com/stdlib-js/stdlib/commit/bbd0c013504b1d288625f26b31e87b4690610d6a) - **docs:** update Markdown equation SVGs _(by stdlib-bot)_
+-   [`f1c2b9b`](https://github.com/stdlib-js/stdlib/commit/f1c2b9bb60663a6c8378d7c41aa3274af0410aec) - **docs:** fix equation [(#16232)](https://github.com/stdlib-js/stdlib/pull/16232) _(by Prashant Kumar Yadav)_
+-   [`5676f37`](https://github.com/stdlib-js/stdlib/commit/5676f37387201cef9bb2b16f15c365fa7cc4b3de) - **test:** migrate `stats/base/dists/kumaraswamy/logpdf` to ULP-based assertions [(#16036)](https://github.com/stdlib-js/stdlib/pull/16036) _(by Athan Reines)_
+-   [`1582ec5`](https://github.com/stdlib-js/stdlib/commit/1582ec5ac2e9a45a13c3d69e16ba9ad0d58dbdd3) - **test:** migrate `stats/base/dists/kumaraswamy/variance` to ULP-based assertions [(#15546)](https://github.com/stdlib-js/stdlib/pull/15546) _(by Athan Reines)_
+-   [`6902d5d`](https://github.com/stdlib-js/stdlib/commit/6902d5db7464c0b65849e332004b1432758f133c) - **test:** migrate `stats/base/dists/kumaraswamy/stdev` to ULP-based assertions [(#15533)](https://github.com/stdlib-js/stdlib/pull/15533) _(by Athan Reines)_
+-   [`d1e2231`](https://github.com/stdlib-js/stdlib/commit/d1e2231c7916645cc3fa67e7b5df6752230df021) - **test:** migrate `stats/base/dists/kumaraswamy/median` to ULP-based assertions [(#15286)](https://github.com/stdlib-js/stdlib/pull/15286) _(by Athan Reines)_
 -   [`274f42b`](https://github.com/stdlib-js/stdlib/commit/274f42bfe257c799288711fe61f94ecfcd67b379) - **test:** migrate `stats/base/dists/kumaraswamy/mode` to ULP-based assertions [(#14426)](https://github.com/stdlib-js/stdlib/pull/14426) _(by Athan Reines)_
 -   [`048e06b`](https://github.com/stdlib-js/stdlib/commit/048e06b6a6d7655a5bf4c20840e14f2449b34950) - **test:** migrate `stats/base/dists/kumaraswamy/mean` to ULP-based assertions [(#14163)](https://github.com/stdlib-js/stdlib/pull/14163) _(by Athan Reines)_
 -   [`075cabd`](https://github.com/stdlib-js/stdlib/commit/075cabdcc90e9f333a2329ae382fca574ee3f841) - **docs:** fix descriptions [(#13938)](https://github.com/stdlib-js/stdlib/pull/13938) _(by Philipp Burckhardt)_
@@ -36,11 +54,12 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Om-A-osc
 -   Philipp Burckhardt
+-   Prashant Kumar Yadav
 -   anee3
 
 </section>
